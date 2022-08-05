@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Faaizah's Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer>
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Design an Ice Cream Sundae and I'll Guess your Zodiac Element</h1>
+    <div class="uwu">
+      <img src="assets/ice1.png" alt="Animated png of a white popsicle. ">
+      <img src="assets/uwu2.png" alt="Animated png of a white taurus symbol. ">
+      <img src="assets/uwu3.png" alt="Animated png of a white witch. ">
+      <img src="assets/uwu4.png" alt="Animated png of a white libra symbol. ">
+      <img src="assets/uwu5.png" alt="Animated png of a white cone ice cream. ">
+    </div>
+		<p>Fancy sprinkles on your banana split or hot chocolate fudge dripping down your brownie sundae? </p>
+    <p>Build your ideal sundae and I'll guess whether you're an Air, Fire, Water or Earth Sign!</p>
+	</header>
+
+	<main>
+
+		<h2>Which type of Sundae do you prefer?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img src="assets/BananaSplit.jpg" alt="A picture of a banana split on a curved bowl. Two bananas are topped with wafers, whipped cream, nuts, and a brown-colored syrup. A fork is kept beside the bowl.">
+        <br>
+        <button id="q1a1" onclick="disableQ1()">Banana Split</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/IceCreamSundae.jpg" alt="A picture of an Ice cream sundae with chocolate syrup topped with whipping cream and a wafer.">
+        <br>
+        <button id="q1a2" onclick="disableQ1()">Classic Ice Cream Sundae</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/BrownieSundae.jpg" alt="A picture of a brownie sundae with vanilla ice cream and chocolate ice cream on the brownie, topped with wafers, and chocolate syrup.">
+        <br>
+        <button id="q1a3" onclick="disableQ1()">Brownie Sundae</button>
+      </div>
+      
+      <div class="answer-choice">
+        <img src="assets/HotFudgeSundae.jpg" alt="A top view photo of a Hot fudge Sundae with fudge topped with sprinkles.">
+        <br>
+        <button id="q1a4" onclick="disableQ1()">Hot Fudge Sundae</button>
+      </div>
+    </div> 
+    
+    <h2>Choose your first ice cream scoop!</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Chocolate.jpg" alt="A picture of two chocolate scoops on a cone.">
+        <br>
+        <button id="q2a1" onclick="disableQ2()">Chocolate Ice Cream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/pistachio.jpg" alt="Scoops of Pistachio Ice Cream on a white bowl next to a triangular plate of pistachios.">
+        <br>
+        <button id="q2a2" onclick="disableQ2()">Pistachio Ice Cream</button>
+      </div>
+      
+      <div class="answer-choice">
+        <img src="assets/vanilla.jpg" alt="A scoop of vanilla ice cream next to some cake.">
+        <br>
+        <button id="q2a3" onclick="disableQ2()">Vanilla Ice Cream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/strawberry.jpg" alt="Scoops of strawberry ice cream in white bowls.">
+        <br>
+        <button id="q2a4" onclick="disableQ2()">Strawberry Ice Cream</button>
+      </div>
+    </div> 
+    
+    <h2>Choose your second scoop!</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/cottoncandy.jpg" alt="A scoop of cotton candy ice cream on a black spoon.">
+        <br>
+        <button id="q3a1" onclick="disableQ3()">Cotton Candy Ice Cream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/cookiedough.jpg" alt="A photo of cookie dough ice cream getting scooped out of a tub.">
+        <br>
+        <button id="q3a2" onclick="disableQ3()">Cookie Dough Ice Cream</button>
+      </div>
+      
+      <div class="answer-choice">
+        <img src="assets/saltedcaramel.jpg" alt="A scoop of salted caramel on a cone. The cone is being held by a hand. The ice cream from the cone is dripping.">
+        <br>
+        <button id="q3a3" onclick="disableQ3()">Salted Caramel Ice Cream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/coffee.jpg" alt="Three scoops of coffee ice cream with pecans and a spoon on a patterned bowl with a cup of coffee beside it.">
+        <br>
+        <button id="q3a4" onclick="disableQ3()">Coffee & Pecan Ice Cream</button>
+      </div>
+      
+    </div> 
+
+
+    <h2>Choose a syrup or whipped cream!</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/whippedcream.jpg" alt="A picture of whipped cream topped with chocolate sprinkles.">
+        <br>
+        <button id="q4a1" onclick="disableQ4()">Whipped Cream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/vanillasyrup.jpg" alt="Picture of two vanilla pods with a peach background.">
+        <br>
+        <button id="q4a2" onclick="disableQ4()">Vanilla syrup</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/BrownieSundae.jpg" alt="A picture of chocolate syrup falling from a spoon to a filled striped mug.">
+        <br>
+        <button id="q4a3" onclick="disableQ4()">Chocolate syrup</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/caramelsyrup.jpg" alt="A picture of a brownie sundae with vanilla ice cream and chocolate ice cream on the brownie, topped with wafers, and chocolate syrup.">
+        <br>
+        <button id="q4a4" onclick="disableQ4()">Caramel syrup</button>
+      </div>
+
+    </div> 
+
+
+    <h2>Choose a topping!</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/sprinkles.jpg" alt="A colorful picture of sprinkles.">
+        <br>
+        <button id="q5a1" onclick="disableQ5()">Sprinkles</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/pecans.jpg" alt="A picture of pecans spread out on a white plate.">
+        <br>
+        <button id="q5a2" onclick="disableQ5()">Pecans</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/caramelpopcorn.jpg" alt="A photo of caramel popcorn is a cover.">
+        <br>
+        <button id="q5a3" onclick="disableQ5()">Caramelized Popcorn</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/marshmallows.jpg" alt="A picture of white, orange, pink marshmallows falling off a jar which is decorated with a checked ribbon.s">
+        <br>
+        <button id="q5a4" onclick="disableQ5()">Marshmallows</button>
+      </div>
+      
+    </div> 
+    <br>
+    <button id="display">Click Here to Display Your Zodiac Element!</button>
+    
+    <h2 id="result">Your result is...</h2>
+    <br>
+    <button id="restart">Restart</button>
+    
+    
+  </main>
+  </body>
+  <br>
+  <br>
+  <br>
+  <footer >
+   <p class="end">Author: Faaizah R (GWC - Personality Quiz) </p>
+    
+  </footer>
+</html>
